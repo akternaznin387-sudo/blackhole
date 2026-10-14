@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackhole - Video Upscaler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>Blackhole</h1>
+            <p class="subtitle">AI Video Upscaler</p>
+        </header>
+
+        <main>
+            <div class="upload-box" id="uploadBox">
+                <p>Tap to select a video</p>
+                <input type="file" id="videoInput" accept="video/*" hidden>
+            </div>
+
+            <div class="controls" id="controls" style="display:none;">
+                <label>Scale:</label>
+                <select id="scaleSelect">
+                    <option value="2x">2x</option>
+                    <option value="1x">1x</option>
+                </select>
+                <button id="startBtn">Start Upscaling</button>
+            </div>
+
+            <div class="progress" id="progress" style="display:none;">
+                <p id="statusText">Processing...</p>
+                <div class="bar"><div class="fill" id="progressFill"></div></div>
+            </div>
+
+            <div class="result" id="result" style="display:none;">
+                <p>Done! Your video is ready.</p>
+                <a id="downloadLink" download>Download Video</a>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
