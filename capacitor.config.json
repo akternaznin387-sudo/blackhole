@@ -1,8 +1,7 @@
 {
   "appId": "com.blackhole.upscaler",
   "appName": "Blackhole",
-  "webDir": ".",
-  "bundledWebRuntime": false,
+  "webDir": "www",
   "server": {
     "androidScheme": "https"
   },
