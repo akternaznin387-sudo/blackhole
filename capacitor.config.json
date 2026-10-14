@@ -1,0 +1,19 @@
+{
+  "appId": "com.blackhole.upscaler",
+  "appName": "Blackhole",
+  "webDir": ".",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "backgroundColor": "#0a0a0f",
+      "showSpinner": false
+    }
+  }
+}
